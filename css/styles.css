@@ -106,12 +106,18 @@ body {
 } */
 
 .header-link {
+  color: var(--black-primery-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: relative;
+}
+
+.header-link:hover,
+.header-link:focus {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--black-primery-color);
-
-  position: relative;
+  color: var(--hover-logo-color);
 }
 
 .header-nav .header-link.current {
@@ -132,14 +138,6 @@ body {
   bottom: -33px;
 }
 
-.header-link:hover,
-.header-link:focus {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--hover-logo-color);
-}
-
 .header-contacts-link {
   display: flex;
   align-items: center;
@@ -148,14 +146,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--grey-primery-color);
   gap: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--hover-logo-color);
 }
 /* main */
@@ -231,6 +226,7 @@ body {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -437,6 +433,8 @@ body {
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -469,6 +467,8 @@ body {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customer-link:hover,
@@ -525,6 +525,9 @@ body {
 
   fill: var(--primery-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -541,10 +544,13 @@ body {
   margin-bottom: 50px;
 }
 
+.porfolio-after-link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
 .porfolio-after-link:hover,
 .porfolio-after-link:focus {
-  display: block;
-
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
